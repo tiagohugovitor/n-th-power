@@ -4,7 +4,7 @@ This project implements and compares different algorithms for calculating the n-
 
 ## Project Context
 
-This project was part of an assignment for the Analysis of Algorithms course in the Master's program in Computer Science at the Federal University of Uberlândia (UFU). The presentation file can be found in 'n-th-power.pdf' (presentation in portuguese). Each calculation is performed using a base of 2 (e.g. 2 raised to the power of inputSize). Additionally, the algorithm runs 10 tests for each input, and the average time taken is recorded.
+This project was part of an assignment for the Analysis of Algorithms course in the Master's program in Computer Science at the Federal University of Uberlândia (UFU). The presentation file can be found in 'n-th-power.pdf' (presentation in Portuguese). Each calculation is performed using a base of 2 (e.g. 2 raised to the power of inputSize). Additionally, the algorithm runs 10 tests for each input, and the average time taken is recorded.
 
 ## Algorithms Implemented
 
@@ -30,10 +30,12 @@ This project was part of an assignment for the Analysis of Algorithms course in 
    ```bash
    git clone https://github.com/tiagohugovitor/n-th-power.git
    cd n-th-power
+   ```
 
 2. Run the comparison script:
     ```bash
     python compareAlgorithms.py
+    ```
 
 3. Results:
     - Execution time graphs saved in the results directory.
@@ -42,9 +44,9 @@ This project was part of an assignment for the Analysis of Algorithms course in 
 ## Algorithms Analysis
 
 ### Time Complexity
- **Iterative Algorithm**: O(n)
- **Recursive Algorithm with Two Recursive Calls**: O(n)
- **Recursive Algorithm with One Recursive Call (Optimized)**: O(log n)
+ - **Iterative Algorithm**: O(n)
+ - **Recursive Algorithm with Two Recursive Calls**: O(n)
+ - **Recursive Algorithm with One Recursive Call (Optimized)**: O(log n)
 
 ### Conclusion
 The iterative algorithm operates with linear time complexity. The Divide and Conquer technique can produce algorithms with both linear (Recursive Algorithm with Two Recursive Calls) and logarithmic (Recursive Algorithm with One Recursive Call) complexities. However, for small inputs, both Divide and Conquer algorithms lag in terms of execution time.
